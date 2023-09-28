@@ -1,11 +1,15 @@
-# mvp-desenvolvimento-fullstack-basico-frontend
+# MVP-ARQ-SOF-PUC-FRONTEND
 
 ## Como rodar o projeto
 
-1. Instale as dependências com o comando `npm install`
+docker build -t my-react-app .
 
-2. Inicie o servidor com o comando `npm run dev`
+docker run -p 80:80 my-react-app
 
-3. Acesse o endereço `http://localhost:5173` no seu navegador
+## Sobre o componente externo
 
-A aplicação espera que a api esteja disponível no endereço `http://localhost:5000`
+O componente externo é uma api pública da coin base que não exige cadastro nem autenticação e esta disponível no endereço:
+
+https://api.coindesk.com/v1/bpi/currentprice.json
+
+A api retorna um json contendo o preço do bitcoin em 3 moedas diferentes.
